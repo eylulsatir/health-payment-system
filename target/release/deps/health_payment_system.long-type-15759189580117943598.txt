@@ -1,0 +1,1 @@
+std::result::Result<soroban_sdk::Vec<(soroban_sdk::Address, i128, soroban_sdk::String)>, soroban_sdk::String>
