@@ -1,4 +1,3 @@
-# health-payment-system
 # Health Payment System
 
 This project is a **Health Payment System** that allows users to send payments using Stellar's native token (XLM) and attach short messages to those payments. It includes features such as regular payments, balance checking, bulk payments, and viewing transaction history.
