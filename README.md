@@ -45,6 +45,29 @@ The Health Payment System allows users to send payments using Stellar's native t
    git clone https://github.com/eylulsatir/health-payment-system.git
    cd health-payment-system
 
+## Deployment
+
+The contract is deployed on Stellar's testnet. Contract ID: `CC5BMHCE66N6WX7L2YN5YNQCRJLSVO5N3BJBBOFFAZUKOJK6YBY66CQR`
+
+To deploy your own instance:
+
+```bash
+soroban contract deploy \
+  --wasm target/wasm32-unknown-unknown/release/health_payment_system.wasm \
+  --source YOUR_SECRET_KEY \
+  --network testnet
+
+## Usage
+soroban contract invoke \
+  --id CC5BMHCE66N6WX7L2YN5YNQCRJLSVO5N3BJBBOFFAZUKOJK6YBY66CQR \
+  --source YOUR_SECRET_KEY \
+  --network testnet \
+  -- \
+  schedule_payment \
+  --to RECIPIENT_ADDRESS \
+  --amount 1000000000 \
+  --interval 86400
+
 ## Advantages of Blockchain in Healthcare
 * **Enhanced Data Security**: Secure storage and sharing of sensitive patient data.
 * **Increased Transparency**: Transparent and easily traceable medical records.
