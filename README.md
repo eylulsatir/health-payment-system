@@ -1,35 +1,58 @@
-# Health Payment System
+# Health Payment System on Stellar
 
-This project is a **Health Payment System** that allows users to send payments using Stellar's native token (XLM) and attach short messages to those payments. It includes features such as regular payments, balance checking, bulk payments, and viewing transaction history.
+This project implements a Health Payment System using Stellar's blockchain technology. It leverages Soroban, Stellar's smart contract platform, to enable secure and efficient healthcare-related payments.
 
-## Advantages of Integrating Blockchain with Healthcare
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Setup and Installation](#setup-and-installation)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Advantages of Blockchain in Healthcare](#advantages-of-blockchain-in-healthcare)
+- [Contributing](#contributing)
+- [License](#license)
 
-- **Data Security**: Secure storage and sharing of patient data.
-- **Transparency and Traceability**: Medical records are transparent and easily traceable.
-- **Cost and Time Efficiency**: Automation of processes and reduction of costs.
+## Overview
+
+The Health Payment System allows users to send payments using Stellar's native token (XLM) and attach short messages to those payments. It's designed to facilitate transparent, secure, and efficient financial transactions in the healthcare sector.
 
 ## Features
 
-- **XLM Transfer**: Users can transfer Stellar's native token (XLM) to other users.
-- **Message with Payments**: Attach short messages with each payment transaction.
-- **Check Balance**: View the user's current XLM balance.
-- **Bulk Payments**: Send XLM to multiple addresses in a single transaction.
-- **View Transaction History**: View the list of past transactions and the messages attached.
+- **XLM Transfer**: Send Stellar's native token (XLM) to other users.
+- **Messaging**: Attach short messages to payment transactions.
+- **Balance Checking**: View current XLM balance of users.
+- **Bulk Payments**: Execute multiple payments in a single transaction.
+- **Transaction History**: View detailed history of past transactions and messages.
+- **Scheduled Payments**: Set up recurring payments at specified intervals.
 
-## Extra Features
+## Technology Stack
 
-- **Scheduled Payments**: Schedule recurring payments to users at specified intervals.
-- **Transaction History**: View a detailed history of payments and messages.
+- [Rust](https://www.rust-lang.org/)
+- [Soroban](https://soroban.stellar.org/)
+- [Stellar Blockchain](https://www.stellar.org/)
 
 ## Project Structure
 
-- **lib.rs**: The main logic of the Health Payment System is implemented here. It contains functions for executing payments, scheduling payments, and checking balances.
-- **Cargo.toml**: Defines the project's dependencies and build configurations.
+- `src/lib.rs`: Core implementation of the Health Payment System.
+- `Cargo.toml`: Project dependencies and build configurations.
 
-## How to Run the Project
+## Setup and Installation
 
-### 1. Clone the Repository
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/eylulsatir/health-payment-system.git
+   cd health-payment-system
 
-```bash
-git clone git@github.com:eylulsatir/health-payment-system.git
-cd health-payment-system
+## Advantages of Blockchain in Healthcare
+* **Enhanced Data Security**: Secure storage and sharing of sensitive patient data.
+* **Increased Transparency**: Transparent and easily traceable medical records.
+* **Improved Efficiency**: Automation of processes leading to reduced costs and time savings.
+* **Interoperability**: Seamless data exchange between different healthcare providers.
+
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
